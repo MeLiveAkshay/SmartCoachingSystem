@@ -17,10 +17,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 
-from SmartCoachingWebApplication import page
+from SmartCoachingWebApplication import page, api
 from SmartCoachingWebApplication.page import urls
+from SmartCoachingWebApplication.api import urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 path('', include(page.urls)),
+path('', include(api.urls)),
 ]

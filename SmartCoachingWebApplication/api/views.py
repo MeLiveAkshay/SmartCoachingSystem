@@ -1,7 +1,4 @@
-from django.urls import path
+from django.http import HttpResponse
 
-from SmartCoachingWebApplication.page import views
-
-urlpatterns = [
-    path('', views.index, name='index'),
-]
+def index(request):
+    return HttpResponse("Hello api!")
