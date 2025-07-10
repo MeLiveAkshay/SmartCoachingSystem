@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # Add your custom apps here, e.g. 'myapp',
+    'core',  # Assuming 'core' is your main app
 ]
 
 MIDDLEWARE = [
